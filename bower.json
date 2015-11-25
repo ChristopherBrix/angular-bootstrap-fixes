@@ -1,0 +1,27 @@
+{
+  "name": "angular-bootstrap-fixes",
+  "description": "Contains fixes for bugs caused by the combination of AngularJS and Bootstrap",
+  "main": [
+    "angular-bootstrap-fixes.css"
+  ],
+  "dependencies": {
+    "angular-bootstrap": ">0.14"
+  },
+  "keywords": [
+    "angular",
+    "bootstrap",
+	"angular-bootstrap"
+  ],
+  "authors": [
+    "Christopher Brix"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ],
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ChristopherBrix/angular-ui-bootstrap-fixes.git"
+  }
+}
