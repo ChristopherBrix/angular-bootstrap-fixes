@@ -1,0 +1,24 @@
+/* Fixes the bug https://github.com/angular-ui/bootstrap/issues/4940
+ * The directive ng-cloak doesn't work on elements with the two classes
+ * `collapse` and `navbar-collapse`
+ */
+@media (min-width: 768px) {
+    .navbar-collapse.collapse
+            :not([ng\:cloak])
+            :not([ng-cloak])
+            :not([data-ng-cloak])
+            :not([x-ng-cloak])
+            :not(.ng-cloak)
+            :not(.x-ng-cloak) {
+        display: block !important;
+    }
+
+    .navbar-collapse.collapse[ng\:cloak],
+    .navbar-collapse.collapse[ng-cloak],
+    .navbar-collapse.collapse[data-ng-cloak],
+    .navbar-collapse.collapse[x-ng-cloak],
+    .navbar-collapse.collapse.ng-cloak,
+    .navbar-collapse.collapse.x-ng-cloak {
+        display: none !important;
+    }
+}
