@@ -10,7 +10,7 @@
             :not([x-ng-cloak])
             :not(.ng-cloak)
             :not(.x-ng-cloak) {
-        display: block !important;
+        display: block;
     }
 
     .navbar-collapse.collapse[ng\:cloak],
